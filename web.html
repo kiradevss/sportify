@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Sportify</title>
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <script src="https://kit.fontawesome.com/071de36bb9.js" crossorigin="anonymous"></script>
+        </head>
+
+    <body>
+        
+        <img src="logo.png" class="logopic"> 
+
+        <div class="container">
+            <div class="login">
+                
+            </div>
+        </div>
+        
+        <div class="welcome">
+            <form action="">
+                <div class="welcomepage"> 
+                    <h1>Welcome to <br> Sportify!</h1>
+                    <div class="input-box">
+                        <input type="text" placeholder="Email Address" value="" class="emailAddress" id="emailAddress" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" placeholder="Password" value="" class="password" id="password" required>
+                    </div>
+
+                    <!-- <div class="remember-forgot"> 
+                        <label>
+                            <input type="checkbox"> Remember me
+                            <a href="#">Forgot Password</a>
+                        </label>
+                    </div> -->
+
+                    <div> 
+                    <button type="submit" id="btnlogin">LOGIN</button>    
+                    <button type="submit" id="btnsignup"> SIGN UP </button>
+                    </div>
+                    
+                    <p class="terms">By Continuing, you accept our Privacy <br> Policy, Terms of Use & Subscription Terms</p>
+                </div>
+
+                <script>
+                    
+                    const btnsignup = document.getElementById('btnsignup');
+                    const btnlogin = document.getElementById('btnlogin');
+                  
+
+                    btnsignup.addEventListener('click', () => {
+                      window.location.href = 'register.html';
+                    });
+
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const loginButton = document.querySelector('#btnlogin');
+                        loginButton.addEventListener('click', function () {
+                            alert('Login Successfully');
+                       });
+                   });
+                  </script>
+
+            </form>
+        </div>
+
+
+
+
+
+
+    </body>
+</html>
+     

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Kanit:wght@100&family=PT+Serif&family=Poppins&display=swap');
+*
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(background.jpg);
+}
+
+.logopic {
+  margin-left: 10%;
+  border-radius: 50%;
+  width: 35%;
+  margin-top: 5%;
+}
+
+
+.welcome{
+  display: flex;
+  justify-content: right;
+  margin-right: 10%;
+  margin-top: -35%;
+}
+.welcomepage{
+  position: relative;
+  background-color: white;
+  max-width: 750px;
+  width: 30rem;
+  height: 40rem;
+  border: 2px solid;
+  border-color: black;
+  padding: 25px;
+  border-radius: 10px;
+}
+.welcomepage .firsth1{
+  margin-top: 5px;
+  padding-bottom: 5%;
+  font-size: 3rem;
+  text-align: center;
+}
+.remember-forgot input[type="radio"] {
+  -moz-appearance: none;
+  appearance: none; 
+  width: 17px; 
+  height: 17px; 
+  border: 2px solid #ccc; 
+  border-radius: 50%; 
+  outline: none;
+ 
+  cursor: pointer;
+}
+.remember-forgot input[type="radio"]:checked {
+  background-color: grey; 
+  border-color: grey; 
+}
+/* full name */
+.welcomepage .input-box{
+  position: relative;
+  width: 91%;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+ background: lightgray;
+ border: none;
+ outline: none;
+ border: 2px solid rgba(255, 255, 255, .2);
+ border-radius: 10px;
+ font-size: 15px;
+ padding-left: 10px;
+ 
+}
+.input-box input::placeholder{
+  color: gray;
+  padding-left: 5px;
+  font-style: bold;
+}
+/* end */
+
+/* age input */
+.welcomepage .input-box-age{
+    position: relative;
+    width: 60%;
+    height: 35px;
+    margin-top: -44px;
+    margin-left: 110px;
+    margin-bottom: 30px;
+  }
+  
+  .input-box-age input{
+    width: 100%;
+    height: 100%;
+   background: lightgray;
+   border: none;
+   outline: none;
+   border: 2px solid rgba(255, 255, 255, .2);
+   border-radius: 10px;
+   font-size: 15px;
+   padding-left: 10px;
+   
+  }
+  .input-box-age input::placeholder{
+    color: gray;
+    padding-left: 5px;
+    font-style: bold;
+  }
+/* end */
+
+/* email input */
+.welcomepage .input-box-email{
+  position: relative;
+  width: 91%;
+  height: 35px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.input-box-email input{
+  width: 100%;
+  height: 100%;
+  background: lightgray;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 10px;
+  font-size: 15px;
+  padding-left: 10px;
+ 
+}
+.input-box-email input::placeholder{
+  color: gray;
+  padding-left: 5px;
+  font-style: bold;
+}
+/* end */
+
+/* password input */
+.welcomepage .input-box-password{
+  position: relative;
+  width: 91%;
+  height: 35px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.input-box-password input{
+  width: 100%;
+  height: 100%;
+  background: lightgray;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 10px;
+  font-size: 15px;
+  padding-left: 10px;
+ 
+}
+.input-box-password input::placeholder{
+  color: gray;
+  padding-left: 5px;
+  font-style: bold;
+}
+/* end */
+
+
+#btnlogin{
+  justify-content: center;
+  margin-left: 33%;
+  background: gray;
+  width: 170px;
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+
+}
+#btnsignup{
+  margin-left: 33%;
+  background: #007980;
+  width: 170px;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  
+}
+.terms {
+  text-align: center; 
+  font-size: 20px; 
+  color: gray; 
+  font-weight: 600; 
+  margin-top: 3rem;
+}

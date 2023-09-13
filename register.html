@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="regis.css" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Sportify/Register</title>
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <script src="https://kit.fontawesome.com/071de36bb9.js" crossorigin="anonymous"></script>
+        
+    </head>
+
+    <body>
+        
+        <img src="logo.png" class="logopic">
+
+        
+        <div class="welcome">
+            <form action="">
+                <div class="welcomepage">
+
+                    <h1 class="firsth1">Register</h1>
+
+                    <div class="input-box">
+                        <input type="text" placeholder="Full Name" value="" class="Full Name" id="Full Name" required>
+                    </div>
+
+                
+                    <h1 style="font-size: 20px; margin-left: 10px;">Age</h1>
+
+                    <div class="input-box-age"> 
+                        <input type="number" placeholder="Age" id="age" name="age" min="0" required> 
+                    </div> 
+                   
+                    <h1 style="font-size: 20px; margin-left: 10px; margin-top: -10px;">Gender</h1>
+
+                     <div class="remember-forgot" style="margin-left: 110px; margin-top: -35px; "> 
+                        <label>
+                            <input type="radio" id="male" name="gender" value="male"> Male 
+                            <input type="radio" id="female" name="gender" value="female"> Female 
+                        </label>
+                    </div>
+
+                    <div class="input-box-email">
+                        <input type="email" placeholder="Email Address" value="" class="Email Address" id="Email Address" required>
+                    </div>
+
+                    <div class="input-box-password">
+                        <input type="password" placeholder="Password" value="" class="password" id="password" required>
+                    </div>
+
+                    
+                    <div>
+                        <button type="submit" id="btnsignup"> SIGN UP </button>
+                       <!--   <button type="submit" id="btnlogin">LOGIN</button>    
+                              --->
+                    </div>
+
+                    <p class="terms">By Continuing, you accept our Privacy <br> Policy, Terms of Use & Subscription Terms</p>
+                </div>
+            
+                <script> 
+                    
+                    document.addEventListener('DOMContentLoaded', function () {
+                         const registerButton = document.querySelector('#btnsignup');
+                         registerButton.addEventListener('click', function () {
+                             alert('Registration complete!');
+                        });
+                    });
+                  </script> 
+
+            </form>
+        </div>
+
+
+
+
+
+
+    </body>
+</html>
+     
