@@ -7,7 +7,7 @@ body {
   background-image: url(background.jpg);
   scroll-behavior: smooth;
   background-repeat: no-repeat;
-  background-size: cover;
+
 }
 .logopic {
     margin-left: 10%;

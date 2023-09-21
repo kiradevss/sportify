@@ -20,7 +20,7 @@
                 <ul id="sidemenu">
                     <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
                     <li><a href="poll.html"><i class="fa-solid fa-square-poll-vertical"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-user-plus"></i></a></li>
+                    <li><a href="addfriends.html"><i class="fa-solid fa-user-plus"></i></a></li>
                     <li><a href="Chat.html"><i class="fa-solid fa-message"></i></a></li>
                     <li><a href="home.html"><i class="fa-solid fa-house"></i></a></li>      
                 </ul>
@@ -31,8 +31,12 @@
 
         <div class="container">
             <div class="news-item">
-                <i class='bx bxs-user-circle' style="font-size: 5rem;"></i> 
-                <h2 style="margin-left: 80px; margin-top: -50px;">Breaking News</h2>
+                <a href="#" class="icon-link">
+                    <i class='bx bxs-user-circle' style="font-size: 5rem;"></i>
+                </a> 
+                <a href="#" class="user-name-link">
+                    <h2 style="margin-left: 80px; margin-top: -50px;">Breaking News</h2>
+                </a>
                 <br>
                 <p style="margin-left: 80px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <p style="margin-left: 80px;" class="hashtag">#Lorem ipsum <span>Lorem ipsum</span></p>  
@@ -50,8 +54,12 @@
             </div>
     
             <div class="news-item">
-                <i class='bx bxs-user-circle' style="font-size: 5rem;"></i> 
-                <h2 style="margin-left: 80px; margin-top: -50px;">Technology Update</h2>
+                <a href="#" class="icon-link">
+                    <i class='bx bxs-user-circle' style="font-size: 5rem;"></i>
+                </a> 
+                <a href="#" class="user-name-link">
+                    <h2 style="margin-left: 80px; margin-top: -50px;">Technology Update</h2>
+                </a>
                 <br>    
                 <p style="margin-left: 80px;">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <p style="margin-left: 80px;" class="hashtag">#Lorem ipsum <span>  #Lorem ipsum</span></p>
@@ -69,8 +77,12 @@
             </div>
     
             <div class="news-item">
-                <i class='bx bxs-user-circle' style="font-size: 5rem;"></i> 
-                <h2 style="margin-left: 80px; margin-top: -50px;">World News</h2>
+                <a href="#" class="icon-link">
+                    <i class='bx bxs-user-circle' style="font-size: 5rem;"></i>
+                </a> 
+                <a href="#" class="user-name-link">
+                    <h2 style="margin-left: 80px; margin-top: -50px;">World News</h2>
+                </a>
                 <br>
                 <p style="margin-left: 80px;">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p style="margin-left: 80px;" class="hashtag">#Lorem ipsum  <span>#Lorem ipsum</span></p>
@@ -87,8 +99,12 @@
             </div>
 
             <div class="news-item">
-                <i class='bx bxs-user-circle' style="font-size: 5rem;"></i> 
-                <h2 style="margin-left: 80px; margin-top: -50px;">Breaking News</h2>
+                <a href="#" class="icon-link">
+                    <i class='bx bxs-user-circle' style="font-size: 5rem;"></i>
+                </a> 
+                <a href="#" class="user-name-link">
+                <h2 style="margin-left: 80px; margin-top: -50px;">John Dover</h2>
+                </a>
                 <br>
                 <p style="margin-left: 80px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <p style="margin-left: 80px;" class="hashtag">#Lorem ipsum  #Lorem ipsum #Lorem ipsum!! <br><span>#Lorem ipsum </span></p> 
@@ -105,24 +121,34 @@
             </div> 
             
         </div>
+
         <script>
             const likeButtons = document.querySelectorAll(".likebtn");
             const likeCounts = document.querySelectorAll(".likeCount");
-    
+        
             likeButtons.forEach((button, index) => {
-                let likeCount = 0;
-    
-                button.addEventListener("click", () => {
+              let likeCount = 0;
+              let isLiked = false;
+        
+              button.addEventListener("click", () => {
+                if (isLiked){
+                    likeCount--;
+                } else {
                     likeCount++;
-                    likeCounts[index].textContent = likeCount;
-    
-                    if (likeCount > 0) {
-                        likeCounts[index].style.display = "inline";
-                    }
-                });
+                }
+                
+                isLiked = !isLiked;
+
+                likeCounts[index].textContent = likeCount;
+        
+                if (likeCount > 0) {
+                  likeCounts[index].style.display = "inline";
+                } else {
+                  likeCounts[index].style.display = "none";
+                }
+              });
             });
-        </script>
-            
+          </script>
   
     </body>
 </html>

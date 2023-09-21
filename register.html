@@ -28,13 +28,32 @@
                         <input type="text" placeholder="Full Name" value="" class="Full Name" id="Full Name" required>
                     </div>
 
-                
-                    <h1 style="font-size: 20px; margin-left: 10px;">Age</h1>
-
-                    <div class="input-box-age"> 
-                        <input type="number" placeholder="Age" id="age" name="age" min="0" required> 
-                    </div> 
-                   
+                    <div class="birthdate-container">
+                        <span class="birthdate-label">Birthdate:</span>
+                        <select name="month" id="month">
+                            <option value="" disabled selected>Month</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <select name="day" id="day">
+                            <option value="" disabled selected>Day</option>
+                            <!-- You can generate the day options dynamically using JavaScript -->
+                        </select>
+                        <select name="year" id="year">
+                            <option value="" disabled selected>Year</option>
+                            <!-- You can generate the year options dynamically using JavaScript -->
+                        </select>
+                    </div>
                     <h1 style="font-size: 20px; margin-left: 10px; margin-top: -10px;">Gender</h1>
 
                      <div class="remember-forgot" style="margin-left: 110px; margin-top: -35px; "> 
@@ -73,6 +92,27 @@
                              alert('Registration complete!');
                         });
                     });
+                        // JavaScript code to populate day and year dropdowns goes here
+                        const dayDropdown = document.getElementById("day");
+                        const yearDropdown = document.getElementById("year");
+                        
+                        // Populate day dropdown
+                        for (let day = 1; day <= 31; day++) {
+                            const option = document.createElement("option");
+                            option.text = day.toString().padStart(2, "0");
+                            option.value = day.toString().padStart(2, "0");
+                            dayDropdown.appendChild(option);
+                        }
+                
+                        // Populate year dropdown
+                        const currentYear = new Date().getFullYear();
+                        for (let year = currentYear; year >= 1950; year--) {
+                            const option = document.createElement("option");
+                            option.text = year.toString();
+                            option.value = year.toString();
+                            yearDropdown.appendChild(option);
+                        }
+
                   </script> 
 
             </form>
